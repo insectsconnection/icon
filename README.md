@@ -1,8 +1,8 @@
 # icon
 
 Jerwin Montellano
-9:38 PM (16 minutes ago)
-to me
+9:38 PM (June 29,2025)
+
 
 1. Environment Variables (.env file)
 Your code relies heavily on environment variables, especially for Twilio configuration (TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, TWILIO_PHONE_NUMBER). It's best practice to manage these using a .env file and the dotenv package.
