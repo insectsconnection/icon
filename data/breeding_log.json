@@ -1,0 +1,79 @@
+[
+  {
+    "id": "7ea3d2c9-161e-4fec-8963-5dc160a11430",
+    "cageId": "eb29a990-d654-4c3e-aa38-b67371339c9a",
+    "timestamp": "2025-06-27T16:24:29.183Z",
+    "activity": "Batch created",
+    "lifecycleStage": "Egg"
+  },
+  {
+    "id": "4021a889-a742-42e2-8fb8-4683472cf9f7",
+    "cageId": "system",
+    "timestamp": "2025-06-27T16:48:45.237Z",
+    "activity": "New user registered: Winjer",
+    "lifecycleStage": null
+  },
+  {
+    "id": "76fc78fb-5df2-4105-80b0-65dbedc139d4",
+    "cageId": "system",
+    "timestamp": "2025-06-27T16:49:04.958Z",
+    "activity": "User Winjer logged in",
+    "lifecycleStage": null
+  },
+  {
+    "id": "4e2c2b26-4989-44a2-95f9-16eb8f23b7d5",
+    "cageId": "system",
+    "timestamp": "2025-06-27T16:52:17.764Z",
+    "activity": "User Winjer logged in",
+    "lifecycleStage": null
+  },
+  {
+    "id": "0cc2fed9-591b-4f95-b1c3-68ef05af4716",
+    "cageId": "system",
+    "timestamp": "2025-06-27T16:52:49.222Z",
+    "activity": "User Winjer logged in",
+    "lifecycleStage": null
+  },
+  {
+    "id": "27110a0e-0eb4-4f68-b1f4-c374e9f2755f",
+    "cageId": "450babbc-b8ee-4a48-9533-7ed84bd47482",
+    "timestamp": "2025-06-27T16:57:27.341Z",
+    "activity": "Batch created",
+    "lifecycleStage": "Egg"
+  },
+  {
+    "id": "01c25ade-5495-4535-92b8-5c3bc1ed99bc",
+    "cageId": "user-1751042925231-91ab8ql4h",
+    "timestamp": "2025-06-27T16:59:07.544Z",
+    "activity": "Image classified: defects",
+    "lifecycleStage": null
+  },
+  {
+    "id": "8ed8795b-02f8-4b73-b207-e832bd4471e4",
+    "cageId": "user-1751042925231-91ab8ql4h",
+    "timestamp": "2025-06-27T17:02:54.295Z",
+    "activity": "Image classified: species",
+    "lifecycleStage": null
+  },
+  {
+    "id": "eb319efd-02d4-41bf-a397-01b0b90a618e",
+    "cageId": "user-1751042925231-91ab8ql4h",
+    "timestamp": "2025-06-27T17:09:08.917Z",
+    "activity": "Task created: Eggs Management ",
+    "lifecycleStage": null
+  },
+  {
+    "id": "8a8ab8ef-c05f-4c04-8c6b-17315c5cc3a7",
+    "cageId": "user-1751042925231-91ab8ql4h",
+    "timestamp": "2025-06-27T17:18:59.881Z",
+    "activity": "Task created: Cagenet ",
+    "lifecycleStage": null
+  },
+  {
+    "id": "0fc31942-ceef-4b1e-bb54-78e52110d723",
+    "cageId": "system",
+    "timestamp": "2025-06-27T17:27:37.694Z",
+    "activity": "User Winjer logged in",
+    "lifecycleStage": null
+  }
+]
