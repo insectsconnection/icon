@@ -1,16 +1,24 @@
-# icon
-
-Jerwin Montellano
-9:38 PM (June 29,2025)
 
 
+
+Jerwin Montellano 
+9:36
+June 29, 2025
+
+
+
+
+https://insectsconnection.github.io/icon/
+
+
+You've got a comprehensive backend setup here! To make sure it runs properly on your local server, let's address a few key points:
 1. Environment Variables (.env file)
 Your code relies heavily on environment variables, especially for Twilio configuration (TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, TWILIO_PHONE_NUMBER). It's best practice to manage these using a .env file and the dotenv package.
-
 Steps:
-
 Install dotenv:
 npm install dotenv
+
+
 Create a .env file in the root of your project (the same directory as your server.js file).
 Add your environment variables to .env:
 TWILIO_ACCOUNT_SID=ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  # Your Twilio Account SID
@@ -19,22 +27,23 @@ TWILIO_PHONE_NUMBER=+1234567890                    # Your Twilio Phone Number (e
 
 # Optional: If you want to explicitly set the server port, uncomment and change
 # PORT=5000
+
+
 Load dotenv at the very top of your server file (before any other require statements):
 require('dotenv').config(); // Add this line at the very top
 
 const express = require('express');
 const multer = require('multer');
 // ... rest of your code
+
+
 2. Supporting Modules/Files
 Your server.js imports several local modules:
-
 ./auth.js
 ./cnn-models.js
 ./payment-system.js
 You need to ensure these files exist in the same directory as your server.js and contain the necessary exports. Without these, your server won't start.
-
 Example structure (create these files if you haven't):
-
 /your-project-folder
 ├── server.js
 ├── .env
@@ -54,8 +63,8 @@ Example structure (create these files if you haven't):
     ├── profit_data.json
     └── tasks.json
     └── users.json (if auth stores users in file)
-Brief overview of what each imported file should roughly contain (if you don't have them yet):
 
+Brief overview of what each imported file should roughly contain (if you don't have them yet):
 auth.js
 // auth.js
 const jwt = require('jsonwebtoken');
@@ -256,6 +265,8 @@ module.exports = {
     getAllUsers,
     updateUser
 };
+
+
 cnn-models.js (This will be a placeholder as actual CNN models require TensorFlow.js, Python, or external services. For now, it will return dummy data.)
 // cnn-models.js
 const CLASSIFICATION_LABELS = {
@@ -364,6 +375,8 @@ module.exports = {
     SPECIES_MARKET_PRICES,
     SPECIES_HOST_PLANTS
 };
+
+
 payment-system.js (This will be a placeholder for GCash integration, using simple file-based storage for orders.)
 // payment-system.js
 const { v4: uuidv4 } = require('uuid');
@@ -600,11 +613,11 @@ module.exports = {
     PAYMENT_STATUS,
     PAYMENT_METHODS
 };
+
+
 3. Start Command in package.json
 For convenience, add a start script to your package.json.
-
 Steps:
-
 Open your package.json file.
 Find the "scripts" section and add a "start" command:
 {
@@ -635,14 +648,16 @@ Find the "scripts" section and add a "start" command:
     "uuid": "^9.0.1"
   }
 }
-Now, you can just run npm start in your terminal to fire up the server.
 
+
+Now, you can just run npm start in your terminal to fire up the server.
 4. Running the Application
 With all the pieces in place:
-
 Open your terminal in the root of your project.
 Install all dependencies (if you haven't already):
 npm install
+
+
 Start the server:
 npm start
 You should see output similar to this:
@@ -655,9 +670,10 @@ Server running on port 5000
 Default admin user created. (Only if no users.json exists or it's empty)
 👤 Default admin login: username=admin, password=admin123
 Payment system initialized.
+
+
 Open your browser and navigate to http://localhost:5000/login.html (or http://localhost:5000/ if index.html is your default).
 Now, your frontend should be able to communicate with your backend server for login, registration, and all the other API calls you've defined!
-
 
 
 
