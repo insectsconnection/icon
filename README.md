@@ -1,3 +1,9 @@
+“We use Replit internally to prototype new types of Assistants before pushing them to production. It allows us to rapidly deploy our environment and try out new features, making sure they work in production and in our SDKs.”
+Ismail Pelaseyet
+Co-founder, SUPERAGENT.SH
+
+Link: https://18113d86-c4ff-4cb3-ab93-0701bbf560fa-00-1jjvfdxdfzcc0.picard.replit.dev/
+
 Butterfly Breeding Management System
 Overview
 This is a comprehensive JavaScript-based web application designed for advanced butterfly breeding operations. The system features CNN-powered species classification, automated cage batch tracking, profit optimization, and real-time SMS notifications. Built for professional butterfly breeders who need sophisticated monitoring and management capabilities.
